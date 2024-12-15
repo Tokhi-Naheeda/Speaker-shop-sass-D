@@ -1,0 +1,102 @@
+@import './mixins';
+$primary-color:grey;
+$secondary-color:black;
+$tertiary-color:white;
+$box-size:200px;
+body{
+    margin: 0;
+    padding: 0;
+    width:99vw;
+
+}
+header{
+    display: flex;
+    height:$box-size;
+    justify-content: space-between;
+    margin:20px 400px;
+}
+.header__lout{
+    display: flex;
+    width:$box-size;
+    justify-content: space-between;
+    &--image{
+        width:50px;
+        height: 50px;
+    }
+}
+.header__nav{
+    width:$box-size*1.5;
+    &__ul{
+        @include NavStyle;
+        &__li a{
+            text-decoration: none;
+        }
+    }
+}
+main{
+    margin:20px 400px;
+}
+.watch-button{
+    margin-top: 50px;
+    @include SizeStyle(250px, 50px);
+    background-color: $secondary-color;
+    @include NavStyle;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    }
+.button{
+    color:$tertiary-color;
+    text-decoration: none;
+    padding: 15px 15px;
+} 
+.cards{
+    @include NavStyle;
+    color: $tertiary-color;
+}
+.bild{
+    @include  SizeStyle(400px, 600px);
+}
+.bild-1{
+    background-image: url(./images/white-box.jpg);
+    background-size: cover;
+    background-position: left 80cap bottom 70%;
+}
+.bild-2{
+    background-image:url(./images/room.jpg);
+    background-size: cover;
+}
+.bild-3{
+    background-image:url(./images/black-white.jpg);
+    background-size: cover;
+    background-position: right 45cap bottom 10px;
+}
+.article{
+     margin:80px 40px;
+      width:220px;
+}
+h2{
+      @include ShadowStyle;
+    }
+.pfeil-img{
+    margin-left: 40px;
+    @include IconStyle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pfeil-img img{
+    width:30px;
+    height:30px
+}
+footer{
+    color: $primary-color;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+//background-position: right 40cap bottom 70%;//
+
+

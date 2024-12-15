@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 99vw;
+}
+
+header {
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  margin: 20px 400px;
+}
+
+.header__lout {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+.header__lout--image {
+  width: 50px;
+  height: 50px;
+}
+
+.header__nav {
+  width: 300px;
+}
+.header__nav__ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav__ul__li a {
+  text-decoration: none;
+}
+
+main {
+  margin: 20px 400px;
+}
+
+.watch-button {
+  margin-top: 50px;
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.bild {
+  width: 400px;
+  height: 600px;
+}
+
+.bild-1 {
+  background-image: url(./images/white-box.jpg);
+  background-size: cover;
+  background-position: left 80cap bottom 70%;
+}
+
+.bild-2 {
+  background-image: url(./images/room.jpg);
+  background-size: cover;
+}
+
+.bild-3 {
+  background-image: url(./images/black-white.jpg);
+  background-size: cover;
+  background-position: right 45cap bottom 10px;
+}
+
+.article {
+  margin: 80px 40px;
+  width: 220px;
+}
+
+h2 {
+  text-shadow: 10px 5px 10px gray;
+}
+
+.pfeil-img {
+  margin-left: 40px;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  border: 7px solid rgb(230, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfeil-img img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  color: grey;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
